@@ -1,0 +1,163 @@
+
+/* Sidebar navigation buttons */
+.nav-item {
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-align: left;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    background: #24616b;
+    color: white;
+    font-weight: bold;
+}
+
+/* Dashboard cards are clickable buttons */
+button.module-card {
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button.module-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px #183b4620;
+}
+
+button.module-card:focus-visible,
+.nav-item:focus-visible {
+    outline: 2px solid #55d6bd;
+    outline-offset: 3px;
+}
+
+.coming-panel .demo-tag {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Authentication screen */
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef5f5;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px #123b4615;
+}
+
+.auth-card h1 {
+    color: #123b46;
+    text-align: center;
+}
+
+.auth-card h1 span {
+    color: #25a58a;
+}
+
+.auth-card h2,
+.auth-card > p {
+    text-align: center;
+}
+
+.auth-switch {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.auth-switch button {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #dce7e7;
+    background: white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.auth-switch button.selected {
+    background: #123b46;
+    color: white;
+}
+
+.auth-card form label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: 600;
+}
+
+.auth-card form input,
+.auth-card form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccdada;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.auth-submit {
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #168c78;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.auth-error,
+.auth-message {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.auth-error {
+    background: #ffeaea;
+    color: #b42318;
+}
+
+.auth-message {
+    background: #e8f7ef;
+    color: #167447;
+}
+
+.auth-footer {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+.logout-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 7px;
+    background: #b84040;
+    color: white;
+    cursor: pointer;
+}

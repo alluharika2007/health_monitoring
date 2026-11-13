@@ -1,0 +1,164 @@
+
+.ecg-page {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.ecg-heading,
+.ecg-chart-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.ecg-heading h2,
+.ecg-chart-heading h3 {
+    margin: 0 0 8px;
+}
+
+.ecg-heading p,
+.ecg-chart-heading p {
+    margin: 0;
+    color: #718096;
+    font-size: 14px;
+}
+
+.ecg-demo-tag {
+    padding: 8px 12px;
+    border-radius: 20px;
+    background: #fee2e2;
+    color: #b91c1c;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.ecg-metric-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.ecg-metric-card,
+.ecg-chart-card,
+.ecg-info-card {
+    padding: 22px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 3px 15px #183b4610;
+}
+
+.ecg-metric-card > span {
+    color: #718096;
+    font-size: 14px;
+}
+
+.ecg-metric-card h3 {
+    margin: 12px 0;
+    font-size: 30px;
+    color: #243447;
+}
+
+.ecg-metric-card h3 small {
+    font-size: 14px;
+    color: #718096;
+}
+
+.ecg-metric-card p {
+    margin-bottom: 0;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.ecg-status {
+    color: #087f73 !important;
+    font-size: 24px !important;
+}
+
+.ecg-chart {
+    width: 100%;
+    margin-top: 22px;
+    overflow: hidden;
+    border: 1px solid #f3dada;
+    border-radius: 8px;
+}
+
+.ecg-chart svg {
+    display: block;
+    width: 100%;
+    height: 240px;
+}
+
+.ecg-dot {
+    color: #087f73;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ecg-controls {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.ecg-controls button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ecg-start {
+    background: #087f73;
+    color: white;
+}
+
+.ecg-stop {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.ecg-reset {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.ecg-controls button:focus-visible {
+    outline: 2px solid #087f73;
+    outline-offset: 3px;
+}
+
+.ecg-info-card {
+    border-left: 4px solid #0d9488;
+}
+
+.ecg-info-card h3 {
+    margin-top: 0;
+}
+
+.ecg-info-card p {
+    margin-bottom: 0;
+    color: #718096;
+    line-height: 1.7;
+}
+
+@media (max-width: 650px) {
+    .ecg-metric-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ecg-chart-card,
+    .ecg-metric-card,
+    .ecg-info-card {
+        padding: 15px;
+    }
+
+    .ecg-chart svg {
+        height: 190px;
+    }
+}

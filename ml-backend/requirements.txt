@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+numpy
+scipy
+pandas
+scikit-learn
+joblib
+wfdb
+mne
